@@ -1,7 +1,7 @@
 let input = document.querySelector("input");
 let terminalBody = document.querySelector("#terminalBody");
 
-let commandList = ['whoami', 'clear', 'whatibelieve', 'aspiration', 'purpose', 'oportunity', 'social'];
+let commandList = ['whoami', 'whatibelieve', 'aspiration', 'purpose', 'oportunity', 'social', 'clear'];
 
 functionCalls();
 
