@@ -15,6 +15,6 @@ var data = {
     {name: '5) Como estou buscando meu propósito e aspiração através dessa oportunidade?', value: 'Então, falando um pouco sobre o meu projeto, tentei apresentar ele praticando conceitos de CI/CD, onde um pipeline, aplicado no Jenkins (servidor de automação) é responsavel por entrega-lo na AWS. Todo esse processo foi feito com a minha experiencia na cultura devops. Falando um pouco sobre a minha aspiração, deixo aberto aqui, meu Linkedin, para que me encontrem por lá, caso queiram conversar sobre tecnologia e mercado de trabalho.'}
   ],
   social: [
-    {name: 'LinkedIn:', value: 'https://linkedin/in/gustavomarannhao'}
+    {name: 'LinkedIn:', value: 'https://linkedin.com/in/gustavomaranhao'}
   ]
 }
