@@ -1,7 +1,7 @@
 let input = document.querySelector("input");
 let terminalBody = document.querySelector("#terminalBody");
 
-let commandList = ['bio', 'clear', 'echo', 'github', 'name', 'projects', 'resume', 'socials'];
+let commandList = ['whoami', 'clear', 'whatibelieve', 'aspiration', 'purpose', 'oportunity', 'social'];
 
 functionCalls();
 
@@ -38,7 +38,7 @@ function executeCommand(command){
 
     for(let i=0; i<data[command].length; ++i){
 
-        terminalBody.innerHTML += `${data[command][i].name}: ` ;
+        terminalBody.innerHTML += `${data[command][i].name} ` ;
 
         if(data[command][i].value.includes('http')){
             terminalBody.innerHTML += `<a href="${data[command][i].value}" target="_blank">${data[command][i].value}</a><br>` ;
@@ -55,7 +55,6 @@ function checkCommand(inputCommand){
     if(command){
         if(command === 'clear'){ commandClear();}
         else if(command === 'echo') {commandEcho(inputCommand);}
-        else if(command === 'github'){ commandGithub(command)}
         else if(command === 'help'){ commandHelp();}
         else if(command === 'resume'){ commandResume();}
         else if(commandList.includes(command)){ executeCommand(command);}
@@ -84,15 +83,6 @@ function commandHelp() {
     for(let i=0; i<commandList.length; i++) {
         terminalBody.innerHTML += `${commandList[i]}<br>`
     }
-}
-
-function commandGithub() {
-    terminalBody.innerHTML += `<br><i class="fa fa-github"> <a href="https://github.com/${data.github[0].value}" target="_blank">${data.github[0].value}</a><br>`;
-    terminalBody.innerHTML += '<br>';
-}
-
-function commandResume() {
-    terminalBody.innerHTML += `<br><a href=assets/${data.resume}>Resume</a><br>`;
 }
 
 function commandEcho(inputCommand) {
