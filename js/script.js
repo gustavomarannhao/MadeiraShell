@@ -56,7 +56,6 @@ function checkCommand(inputCommand){
         if(command === 'clear'){ commandClear();}
         else if(command === 'echo') {commandEcho(inputCommand);}
         else if(command === 'help'){ commandHelp();}
-        else if(command === 'resume'){ commandResume();}
         else if(commandList.includes(command)){ executeCommand(command);}
         else{
             terminalBody.innerHTML +=  '<br>' + inputCommand + ' is not recognized as a command, Try \"help\"<br>';
